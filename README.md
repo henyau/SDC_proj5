@@ -44,7 +44,7 @@ The recommended number of orientation bins is between 9 to 12 while the recommen
 We can also see that channels 1 and 2 do not add 
 
 #### 3. Classifier training
-This function `extract_features()`,implemented in `hog_helper.py`, combines the feature vectors of the HOG, spatial, and color information. The function is called from the second cell of the iPython notebook `Vehicle Detection.ipynb` to generate feature vectors for 8,798 images of vehicles and 8,971 images of non-vehicles. 
+This function `extract_features()`,implemented in `hog_helper.py`, combines the feature vectors of the HOG, spatial, and color information. The function is called from the second cell of the iPython notebook `Vehicle Detection.ipynb` to generate feature vectors for 8,798 images of vehicles and 8,971 images of non-vehicles. The data sources are from KITTI (http://www.cvlibs.net/datasets/kitti/) and 
 
 After rescaling the feature vectors with `StandardScaler()`, the scaled feature vectors are used to train a linear support vector classifier (SVC) using `sklearn.svm.LinearSVC()`.
 
@@ -69,7 +69,6 @@ There are several misclassifications, however using threshold on the accumulatio
 
 Using more search window sizes also means performing predictions, particularly if the scaling is `<1`. Performance optimizations to achive realtime classifications are discussed below.
 
-![alt text][image4]
 
 ---
 
