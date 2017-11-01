@@ -173,7 +173,7 @@ def draw_labeled_bboxes(img, labels):
         bbox = ((np.min(nonzerox), np.min(nonzeroy)), (np.max(nonzerox), np.max(nonzeroy)))
         
         # Draw the box on the image if larger than some threshold 
-        if np.abs(bbox[0][0]-bbox[1][0]) > 30 and np.abs(bbox[0][1]-bbox[1][1]) > 30:
+        if np.abs(bbox[0][0]-bbox[1][0]) > 50 and np.abs(bbox[0][1]-bbox[1][1]) > 50:
            
             cv2.rectangle(img, bbox[0], bbox[1], (0,0,255), 6)
     # Return the image
