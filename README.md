@@ -80,7 +80,7 @@ This video is of the first try implementation using LinearSVC without speed opti
 
 
 This video is of the near realtime implementation using TensorFlow with lane detection (~5 frames per second):
-[link to video result](./output_videos/challenge_video_output.mp4)
+[link to video result](./output_videos/project_video_output_w_lane_test3.mp4)
 
 The speed optimized implementation has more false positives than the standard implementation but could be corrected with more parameter tuning.
 
