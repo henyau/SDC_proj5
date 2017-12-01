@@ -162,7 +162,7 @@ def extract_features_augmented(imgs, cspace='RGB', spatial_size=(32, 32),
         #test halve size
         feature_image = cv2.resize(feature_image,None, fx=1/2, fy=1/2, interpolation = cv2.INTER_LINEAR)    
 #        feature_image = cv2.equalizeHist(feature_image)
-        augment_b = True
+        augment_b = False
         
         if augment_b == True:
             for i in range(8):      
