@@ -75,12 +75,9 @@ Next the image shows the optimized implementation where only a single moving win
 ### Video Implementation
 
 #### 1. Video output
-This video is of the first try implementation using LinearSVC without speed optimization (~6 seconds per frame):
-[link to video result](./output_videos/project_video_output.mp4)
 
-
-This video is of the near realtime implementation using TensorFlow with lane detection (~5 frames per second):
-[link to video result](./output_videos/project_video_output_w_lane_test3.mp4)
+This video result uses TensorFlow NN model with lane detection:
+[link to video result](./output_videos/project_video_output_w_lane_multWindow_Final.mp4)
 
 The speed optimized implementation has more false positives than the standard implementation but could be corrected with more parameter tuning.
 
