@@ -79,7 +79,6 @@ Next the image shows the optimized implementation where only a single moving win
 This video result uses TensorFlow NN model with lane detection:
 [link to video result](./output_videos/project_video_output_w_lane_multWindow_Final.mp4)
 
-The speed optimized implementation has more false positives than the standard implementation but could be corrected with more parameter tuning.
 
 #### 2. Video pipeline
 The video pipeline is much the same as the image pipeline except that heatmaps for the previous 4 frames are stored and summed. This reduces the likelihood of a false positive detection. This is described in the function `process_vehicle_overlay()`. The lane detection from a previous project is also added. 
